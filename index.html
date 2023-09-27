@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema Ticket Reservation</title>
+    <!--Fpntawseome İkon Paketi-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!--Still Dosyası-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--Sinema perdesi-->
+      <h2 class="head">Welcome to Cinema X</h2>
+      <div class="screen">
+        <img
+          src="https://kervanperde.com/wp-content/uploads/2018/04/projeksiyon-perde-img-3.jpg"
+          alt=""
+        />
+      </div>
+
+      <!--1. Koltuk sırası-->
+      <div class="seatRow">
+        <div class="seat reserved"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+      </div>
+      <!--1. Koltuk sırası-->
+      <!--2. Koltuk sırası-->
+      <div class="seatRow">
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+      </div>
+      <!--2. Koltuk sırası -->
+
+      <!--3. Koltuk sırası -->
+      <div class="seatRow">
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat reserved"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat reserved"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+      </div>
+      <!--3. Koltuk sırası -->
+      <!--4. Koltuk sırası -->
+      <div class="seatRow">
+        <div class="seat reserved"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat reserved"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat reserved"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+      </div>
+      <!--4. Koltuk sırası -->
+      <!--5. Koltuk sırası -->
+      <div class="seatRow">
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat reserved"><i class="fa-solid fa-chair"></i></div>
+      </div>
+      <!--5. Koltuk sırası -->
+    </div>
+    <!-- Film Seçim Barı-->
+
+    <div class="movie-list">
+      <select id="movie">
+        <option disabled>Choose Movie</option>
+        <option value="100">Movie 1 (Salon 3)</option>
+        <option value="200">Movie 2 (Salon 7)</option>
+        <option value="300">Movie 3 (Salon 5)</option>
+      </select>
+    </div>
+    <!-- Film Seçim Barı-->
+
+    <!--Koltuk Bilgi Barı-->
+
+    <ul>
+      <li>
+        <div class="seat reserved"><i class="fa-solid fa-chair"></i></div>
+        <span>Reserved seat</span>
+      </li>
+      <li>
+        <div class="seat selected"><i class="fa-solid fa-chair"></i></div>
+        <span>Selected Seat</span>
+      </li>
+      <li>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <span>Empty seat</span>
+      </li>
+    </ul>
+
+    <!--Tutar Bilgi-->
+
+    <p class="infoText">
+      <span id="count"></span> Tickets - Total price:
+      <span id="amount">150</span>
+    </p>
+
+    <!--Java Script-->
+    <script src="./main.js"></script>
+  </body>
+</html>
